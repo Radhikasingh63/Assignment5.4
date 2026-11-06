@@ -1,0 +1,125 @@
+
+/* CSS Variables / Design Tokens */
+:root {
+    /* Colors */
+    --primary-color: #2563eb;
+    --secondary-color: #1e3a5f;
+    --background-color: #f0f4f8;
+    --text-color: #333333;
+    --card-color: #ffffff;
+
+    /* Spacing */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+
+    /* Font Sizes */
+    --font-small: 14px;
+    --font-medium: 18px;
+    --font-large: 32px;
+}
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    font-size: var(--font-medium);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-large);
+}
+
+header h1 {
+    font-size: var(--font-large);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--primary-color);
+    padding: var(--spacing-medium);
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: var(--spacing-small);
+}
+
+/* Main Sections */
+section {
+    margin: var(--spacing-medium);
+    padding: var(--spacing-large);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--card-color);
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-color);
+    padding: var(--spacing-medium);
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Headings */
+h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+h3 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-small);
+}
+
+/* Buttons */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--spacing-small) var(--spacing-medium);
+    margin-top: var(--spacing-medium);
+    font-size: var(--font-small);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-medium);
+}
